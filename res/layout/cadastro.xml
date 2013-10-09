@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#BEBEBE">
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical"
+            >
+            
+            <TextView
+			    android:id="@+id/lblNome"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Nome do Servidor:"	
+			    android:textStyle="bold"
+        		android:textSize="12px"	    
+		    />
+
+			<EditText
+				android:id="@+id/txtNomeServidor"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+			/>
+
+			<TextView
+			    android:id="@+id/lblNrIp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Número do IP ou Host"
+			    android:textStyle="bold"
+        		android:textSize="12px"
+			     />
+			
+			<EditText
+				android:id="@+id/txtNrIp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			/>
+
+			<TextView
+			    android:id="@+id/lblEndereco"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Descrição:"
+			    android:textStyle="bold"
+        		android:textSize="12px"
+			   />
+			
+			<EditText
+			    android:id="@+id/txtDescricao"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			/>
+
+			<TextView
+			    android:id="@+id/lblEmail"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Email:"
+			    android:textStyle="bold"
+        		android:textSize="12px"
+			   />
+			
+			<EditText
+			    android:id="@+id/txtEmail"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			/>
+
+			
+			<Button
+			    android:id="@+id/btnCadServidor"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="Novo" 
+			    android:textStyle="bold"
+        		android:textSize="16px"
+			    android:drawableBottom="@drawable/salvar"/>
+					
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

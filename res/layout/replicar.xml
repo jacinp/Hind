@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEBEBE"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Transferir dados para Web"
+            android:textSize="16px"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lblTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Total de Registros:"
+        android:textSize="14px"
+        android:textStyle="bold" />
+
+    
+    <TableRow android:gravity="center" >
+	 <RadioGroup
+                android:id="@+id/rdgAtivar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdbCopiaDados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:text="Copiar dados" />
+
+        <RadioButton
+            android:id="@+id/rdbTransferir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Transferir dados" />
+        </RadioGroup>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço de Destino:" 
+        android:textSize="12px"/>
+
+    <EditText
+        android:id="@+id/txtHostDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/transferedado"
+        android:text="Iniciar"
+        android:textStyle="bold"
+        android:textSize="16px" />
+
+  </TableLayout>

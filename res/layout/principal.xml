@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#BEBEBE">
+    
+<ScrollView
+   android:id="@+id/scrollView1"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content" >
+
+   	<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:orientation="vertical"
+       >            
+		    <Button
+		        android:id="@+id/btnCadastro"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Cadastro" 
+		        android:textStyle="bold"
+		        android:textSize="16px"
+		        android:drawableBottom="@drawable/cadastro"/>
+		
+		    <Button
+		        android:id="@+id/btnMonitorar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		           android:drawableBottom="@drawable/monitora"
+		        android:text="Monitorar" 
+		        android:textStyle="bold"
+		        android:textSize="16px"/>
+		
+		    <Button
+		        android:id="@+id/btnTransferir"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Transferir Dados" 
+		           android:drawableBottom="@drawable/transfere"
+		           android:textStyle="bold"
+		        android:textSize="16px"/>
+		
+		    <Button
+		        android:id="@+id/btnSair"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:drawableBottom="@drawable/sair"
+		        android:text="Sair" 
+		        android:textStyle="bold"
+		        android:textSize="16px"/>
+ 		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

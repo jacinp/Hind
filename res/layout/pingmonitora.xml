@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#BEBEBE">
+
+    <TextView
+        android:id="@+id/lblPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:text="Nome do Host ou IP:"
+        android:textStyle="bold"
+        android:textSize="12px" />
+
+    <EditText
+        android:id="@+id/txtMonitora"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblPing"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnPingMonitora"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtMonitora"
+        android:text="Ping" 
+        android:textStyle="bold"
+        android:textSize="16px"
+        android:drawableBottom="@drawable/ping"/>
+
+    <TextView
+        android:id="@+id/lblResPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnPingMonitora"
+        android:layout_marginTop="16dp"
+        android:text=" " />
+
+</RelativeLayout>
